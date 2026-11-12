@@ -1,0 +1,22 @@
+# Artefatos de build C/CUDA (binarios e executaveis)
+*.so
+*.o
+*.dll
+*.lib
+*.exp
+*.exe
+build/
+tccublas
+
+# Matrizes geradas (regeneraveis com auxiliares/gerar_matrizes_txt.py)
+matriz_*.txt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
