@@ -1,0 +1,16 @@
+services:
+  benchmark:
+    build:
+      context: .
+      args:
+        CUDA_ARCH: sm_61   # GTX 1050 Ti; altere para outra GPU e reconstrua
+    image: tccublas-tcc
+    volumes:
+      - ./resultados:/app/resultados   # CSV e ambiente.txt saem para o host
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

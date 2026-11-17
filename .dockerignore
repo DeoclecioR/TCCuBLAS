@@ -1,0 +1,31 @@
+# Artefatos de build C/CUDA (em qualquer subpasta): a imagem compila tudo do
+# zero para Linux. O contexto de build e a propria pasta TCCuBLAS/.
+**/*.so
+**/*.o
+**/*.dll
+**/*.lib
+**/*.exp
+**/*.exe
+build/
+
+# Matrizes geradas (podem ter dezenas de MB)
+**/matriz_*.txt
+
+# Python
+**/__pycache__/
+**/*.pyc
+.venv/
+venv/
+
+# Resultados de benchmark (gerados em runtime, nao precisam ir para a imagem)
+**/resultados/
+**/*.csv
+
+# Controle de versao e metadados
+.git/
+.gitignore
+
+# Documentacao e arquivos de IDE
+**/*.md
+.vscode/
+.idea/

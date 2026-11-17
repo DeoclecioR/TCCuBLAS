@@ -1,0 +1,9 @@
+# Harness de comparacao do TCC (versoes fixadas para reprodutibilidade).
+# Compativel com Python 3.10 (Ubuntu 22.04) e CUDA 12.x.
+
+# NumPy: referencia em CPU (numpy.multi_dot).
+numpy==1.26.4
+
+# CuPy: referencia em GPU (cupy.multi_dot). Sufixo cuda12x = familia CUDA 12.x.
+# Se mudar a versao de CUDA, ajuste o pacote (ex.: cupy-cuda11x para CUDA 11.x).
+cupy-cuda12x==13.3.0

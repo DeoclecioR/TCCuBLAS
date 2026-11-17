@@ -1,0 +1,5 @@
+python=3.12.10
+numpy=1.26.4
+plataforma=Windows-11-10.0.26200-SP0
+cupy=13.3.0
+gpu,driver,vram=NVIDIA GeForce GTX 1050 Ti, 582.78, 4096 MiB
